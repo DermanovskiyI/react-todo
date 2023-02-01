@@ -1,4 +1,4 @@
-// @import "../../assets/shared/variables.scss";
+@import "../../assets/scss/shared/_variables.scss";
 .navigation {
     padding: 16px;
     background-color: rgb(255, 233, 233);
@@ -6,7 +6,7 @@
     &__link {
         font-size: 24px;
         font-weight: 600;
-        // color: $blue;
+        color: $blue;
         transition: color .3s;
 
         &:not(:last-child) {
@@ -14,11 +14,11 @@
         }
 
         &:hover {
-            // color: $blue-hovered;
+            color: $blue-hovered;
         }
 
         &:active {
-            // color: $blue-active;
+            color: $blue-active;
         }
     }
 }

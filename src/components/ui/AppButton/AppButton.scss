@@ -1,0 +1,31 @@
+@import "../../../assets/scss/shared/_variables";
+.AppButton {
+    position: relative;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    border: none;
+    background-color: $blue;
+    outline: none;
+    color: $base-white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: color .3s ease, opacity .3s ease;
+    box-shadow: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: $blue;
+    transition: all .4s;
+
+    &:hover {
+        background-color: $blue-hovered;
+    }
+
+    &:active {
+        background: $blue-active;
+    }
+}

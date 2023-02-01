@@ -1,0 +1,9 @@
+@import "../../assets/scss/shared/_variables.scss";
+.todoItem {
+    padding: 16px;
+    border: 1px solid $orange;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}

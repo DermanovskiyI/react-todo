@@ -2,7 +2,10 @@ import React from 'react';
 
 const index = () => {
     return (
-        <h1>Это главная страница</h1>
+        <div>
+            <h1>Это главная страница</h1>
+
+        </div>
     )
 }
 
