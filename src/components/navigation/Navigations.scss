@@ -1,0 +1,24 @@
+// @import "../../assets/shared/variables.scss";
+.navigation {
+    padding: 16px;
+    background-color: rgb(255, 233, 233);
+
+    &__link {
+        font-size: 24px;
+        font-weight: 600;
+        // color: $blue;
+        transition: color .3s;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        &:hover {
+            // color: $blue-hovered;
+        }
+
+        &:active {
+            // color: $blue-active;
+        }
+    }
+}
