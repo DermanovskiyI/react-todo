@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import TodoForm from '../components/todo/TodoForm';
 import TodoItem from '../components/todo/TodoItem';
 import AppButton from '../components/ui/AppButton/AppButton';
 import AppInput from '../components/ui/AppInput/AppInput';
@@ -40,9 +41,10 @@ const Todo = () => {
             <h1>todo list</h1>
             {/* <Link to={`${Date.now()}`}>Динамическая страница</Link> */}
             <div className='container'>
+                <TodoForm />
                 <div className="todo">
                     <AppInput 
-                        placeholder={'Напишите текст...'}
+                        placeholder={'Add new task...'}
                         value={todo}
                         onInputChange={onInputChange}
                         onInputClear={onInputClear}
@@ -56,7 +58,6 @@ const Todo = () => {
                 </div>
                 
                 {todoList.map(todo => <TodoItem todo={todo} key={todo.id} />)}
-
             </div>
             
         </div>

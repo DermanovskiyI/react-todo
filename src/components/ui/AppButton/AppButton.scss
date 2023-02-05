@@ -28,4 +28,9 @@
     &:active {
         background: $blue-active;
     }
+
+    &:disabled {
+        background-color: $silver;
+        cursor: initial;
+    }
 }
